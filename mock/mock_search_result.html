@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/search_result.css">
+        
+        <!-- JS -->
+<!--
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+-->
+        <title>AQuSearch - home</title>
+
+    </head>
+    <body ontouchstart="">
+    <!-- pageHeader -->
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top ">
+        <a class="navbar-brand" href="/"><img src="http://via.placeholder.com/120x40" class="d-inline-block align-top" alt=""></a>
+
+        <button class="navbar-toggler" type="button" 
+          data-toggle="collapse" data-target="#navbarNavDropdown" 
+          aria-controls="navbarNavDropdown" aria-expanded="false" 
+          aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ranking</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">What's This？</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- // pageHeader -->
+
+    <div class="container">
+    <!-- searchComponent -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">検索結果</li>
+            </ol>
+        </nav>
+
+        <form class="search-box" action="/search" method="get">
+            <div class="input-group">
+                <input type="search" name="keyword"
+                 class="form-control" placeholder="名前・種類・英名を入力して検索しよう！">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary fas fa-search">検索</button>
+                </div>
+            </div>
+        </form>
+
+    <!-- content -->
+        <H1 class="h5">
+            検索条件：<a href="/" class="badge badge-pill badge-secondary">ラスボラ</a>
+            <a href="/" class="badge badge-pill badge-secondary">ハナビ</a>
+        </H1>
+
+        <H2 class="h6">
+            <span>検索結果：</span>1〜30<span class="font-min-1">件</span> / 999<span class="font-min-1">件</span>
+            <span class="sort-label">ソート：和名昇順</span>
+        </H2>
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination pagination-sm justify-content-center">
+            <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1">前へ</a></li>
+            <li class="page-item disabled">
+              <a class="page-link" href="#" tabindex="-1">1</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">...</a></li>
+            <li class="page-item"><a class="page-link" href="#">次へ</a></li>
+            </ul>
+        </nav>
+        
+        <div class="row">
+
+            <div class="col-4 col-md-3">
+                <div class="card">
+                    <img class="card-img-top tile" src="./images/369873786_055fc4091f_o.jpg" alt="card image">
+                    <div class="card-img-overlay">
+                        <a href="/tile" class="tile-link"></a>
+                        <div class="card-text source"><a href="/source">www.XXXXX.com</a></div>
+                        <div class="card-text caption"><p>ミクロラスボラspハナビ</p></div>
+                    </div>
+                    <div class="card-body">
+                        <table>
+                        <tr>
+                            <td>
+                                <p class="text-header">大きさ</p><br/>
+                                <p class="text-min">9999〜</p>
+                                <p class="text-max">9999</p>cm
+                            </td>
+                            <td>
+                                <p class="text-header">予算</p><br/>
+                                <p class="text-min">9999〜</p>
+                                <p class="text-max">9999</p>円
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="text-header">PH</p><br/>
+                                <img src="./images/weakly_alkaline.png" width="70px">
+                            </td>
+                            <td>
+                                <p class="text-header">育てやすさ</p><br/>
+                                <img src="./images/1star.png" width="70px">
+                            </td>
+                        </tr>
+                        </table>
+                    </div>
+                    <div class="card-footer">
+                        <span class="fas fa-tags badge tag">ダニオ属</span>
+                        <span class="fas fa-tags badge tag">sssss</span>
+                        <span class="fas fa-tags badge tag">ラスボラ</span>
+                        <span class="fas fa-tags badge tag">ラスボラ</span>
+                        <span class="fas fa-tags badge tag">ミクロラスボラ</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-4 col-md-3">
+                <div class="card">
+                    <img class="card-img-top tile" src="./images/3317047192_4c3e234114_o.jpg" alt="card image">
+                    <div class="card-img-overlay">
+                        <a href="/tile" class="tile-link"></a>
+                        <div class="card-text source"><a href="/source">www.XXXXX.com</a></div>
+                        <div class="card-text caption"><p>ミクロラスボラspハナビ</p></div>
+                    </div>
+                    <div class="card-body">
+                        <table>
+                        <tr>
+                            <td>
+                                <p class="text-header">大きさ</p><br/>
+                                <p class="text-min">9999〜</p>
+                                <p class="text-max">9999</p>cm
+                            </td>
+                            <td>
+                                <p class="text-header">予算</p><br/>
+                                <p class="text-min">9999〜</p>
+                                <p class="text-max">9999</p>円
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="text-header">PH</p><br/>
+                                <img src="./images/weakly_acid.png" width="70px">
+                            </td>
+                            <td>
+                                <p class="text-header">育てやすさ</p><br/>
+                                <img src="./images/3star.png" width="70px">
+                            </td>
+                        </tr>
+                        </table>
+                    </div>
+                    <div class="card-footer">
+                        <span class="fas fa-tags badge tag">ダニオ属</span>
+                        <span class="fas fa-tags badge tag">ミクロラスボラ</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 col-md-3">
+                <div class="card">
+                    <img class="card-img-top tile" src="./images/3287551091_202288c2f6.jpg" alt="card image">
+                    <div class="card-img-overlay">
+                        <a href="/tile" class="tile-link"></a>
+                        <div class="card-text source"><a href="/source">www.XXXXX.com</a></div>
+                        <div class="card-text caption"><p>ミクロラスボラspハナビ</p></div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row no-gutters">
+                            <div class="col-6">
+                                <p class="text-header">大きさ</p><br/>
+                                <p class="text-min">9999〜</p>
+                                <p class="text-max">9999</p>cm
+                            </div>
+                            <div class="col-6">
+                                <p class="text-header">予算</p><br/>
+                                <p class="text-min">9999〜</p>
+                                <p class="text-max">9999</p>円
+                            </div>
+                            <div class="col-6">
+                                <p class="text-header">PH</p><br/>
+                                <img src="./images/neutrality.png" width="70px">
+                            </div>
+                            <div class="col-6">
+                                <p class="text-header">育てやすさ</p><br/>
+                                <img src="./images/5star.png" width="70px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="fas fa-tags badge tag">ラスボラ</span>
+                        <span class="fas fa-tags badge tag">ラスボラ</span>
+                        <span class="fas fa-tags badge tag">ミクロラスボラ</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 col-md-3">
+                <div class="card">
+                    <img class="card-img-top tile" src="./images/3287551091_202288c2f6.jpg" alt="card image">
+                    <div class="card-img-overlay">
+                        <a href="/tile" class="tile-link"></a>
+                        <div class="card-text source"><a href="/source">www.XXXXX.com</a></div>
+                        <div class="card-text caption"><p>ミクロラスボラspハナビ</p></div>
+                    </div>
+                    <div class="card-body">
+                        <table>
+                        <tr>
+                            <td>
+                                <p class="text-header">大きさ</p><br/>
+                                <p class="text-min">9999〜</p>
+                                <p class="text-max">9999</p>cm
+                            </td>
+                            <td>
+                                <p class="text-header">予算</p><br/>
+                                <p class="text-min">9999〜</p>
+                                <p class="text-max">9999</p>円
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="text-header">PH</p><br/>
+                                <img src="./images/acid.png" width="70px">
+                            </td>
+                            <td>
+                                <p class="text-header">育てやすさ</p><br/>
+                                <img src="./images/4star.png" width="70px">
+                            </td>
+                        </tr>
+                        </table>
+                    </div>
+                    <div class="card-footer">
+                        <span class="fas fa-tags badge tag">ラスボラ</span>
+                        <span class="fas fa-tags badge tag">ラスボラ</span>
+                        <span class="fas fa-tags badge tag">ミクロラスボラ</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination pagination-sm justify-content-center">
+            <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1">前へ</a></li>
+            <li class="page-item disabled">
+              <a class="page-link" href="#" tabindex="-1">1</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">...</a></li>
+            <li class="page-item"><a class="page-link" href="#">次へ</a></li>
+            </ul>
+        </nav>
+
+    <!-- pageFooter -->
+    <pageFooter>
+        <div class="row">
+            <div class="footer">
+                ここにサイトマップ
+            </div>
+        </div>
+    </pageFooter>
+
+    </body>
+</html>
+

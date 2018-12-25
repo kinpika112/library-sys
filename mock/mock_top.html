@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/main.css">
+        
+        <!-- JS -->
+<!--
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+-->
+        <title>AQuSearch - home</title>
+
+    </head>
+    <body ontouchstart="">
+    <!-- pageHeader -->
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top ">
+        <a class="navbar-brand" href="/"> <img src="http://via.placeholder.com/120x40" class="d-inline-block align-top" alt=""></a>
+
+        <button class="navbar-toggler" type="button" 
+          data-toggle="collapse" data-target="#navbarNavDropdown" 
+          aria-controls="navbarNavDropdown" aria-expanded="false" 
+          aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ranking</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">What's This？</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- // pageHeader -->
+
+    <div class="container">
+    <!-- searchComponent -->
+        <form class="search-box" action="/search" method="get">
+            <div class="input-group">
+                <input type="search" name="keyword"
+                 class="form-control" placeholder="名前・種類・英名を入力して検索してみよう！">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary fas fa-search">検索</button>
+                </div>
+            </div>
+        </form>
+
+    <!-- detailSearchComponent -->
+<!--
+        <button type="button" data-toggle="collapse" data-target="#collapseExample"
+          aria-expanded="false" aria-controls="collapseExample">
+        特 徴 検 索
+        </button>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                コンテンツが表示されます。
+            </div>
+        </div>
+-->
+    <!-- content -->
+        <H2 class="h6">
+            <a class="" href="/">淡水魚 Random PickUp</a>
+            <small class="float-right"><a href="/">もっと見る</a></small>
+        </H2>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card">
+                    <img class="card-img-top tile" src="./images/369873786_055fc4091f_o.jpg" alt="card image">
+                    <div class="card-img-overlay">
+                        <a href="/tile" class="tile-link"></a>
+                        <div class="card-text source"><a href="/source">www.XXXXX.com</a></div>
+                        <div class="card-text caption rounded-bottom"><a href="/cation">ミクロラスボラspハナビ</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6">
+                <div class="card">
+                    <img class="card-img-top tile" src="./images/3287551091_202288c2f6.jpg" alt="card image">
+                    <div class="card-img-overlay">
+                        <a href="/tile" class="tile-link"></a>
+                        <div class="card-text source"><a href="/source">www.XXXXX.com</a></div>
+                        <div class="card-text caption rounded-bottom"><a href="/cation">ミクロラスボラspハナビ</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4">
+                <div class="card">
+                    <img class="card-img-top tile" src="./images/8328910405_fdf256c5f2_o.jpg" alt="card image">
+                    <div class="card-img-overlay">
+                        <a href="/tile" class="tile-link"></a>
+                        <div class="card-text source"><a href="/source">www.XXXXX.com</a></div>
+                        <div class="card-text caption rounded-bottom"><a href="/cation">ミクロラスボラspハナビ</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4">
+                <div class="card">
+                    <img class="card-img-top tile" src="./images/3317047192_4c3e234114_o.jpg" alt="card image">
+                    <div class="card-img-overlay">
+                        <a href="/tile" class="tile-link"></a>
+                        <div class="card-text source"><a href="/source">www.XXXXX.com</a></div>
+                        <div class="card-text caption rounded-bottom"><a href="/cation">ミクロラスボラspハナビ</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4">
+                <div class="card">
+                    <img class="card-img-top tile" src="./images/369873786_055fc4091f_o.jpg" alt="card image">
+                    <div class="card-img-overlay">
+                        <a href="/tile" class="tile-link"></a>
+                        <div class="card-text source"><a href="/source">www.XXXXX.com</a></div>
+                        <div class="card-text caption rounded-bottom"><a href="/cation">ミクロラスボラspハナビ</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- pageFooter -->
+    <pageFooter>
+        <div class="row">
+            <div class="fotter col">
+            ここにサイトマップ
+            </div>
+        </div>
+    </pageFooter>
+
+    </body>
+</html>
+
